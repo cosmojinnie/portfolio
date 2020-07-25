@@ -238,8 +238,12 @@ a.dotted-link:hover {
   opacity: 0.8;
 }
 
-.latest .divider {
+.latest .divider:first-child {
   margin-bottom: 60px;
+}
+
+.latest .divider {
+  margin-bottom: 35px;
 }
 
 .latest .featured {
@@ -539,6 +543,7 @@ a.dotted-link:hover {
 
 .languages .item .level {
   color: #999;
+  margin-left: 3px;
 }
 
 .languages .item:last-child {

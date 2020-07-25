@@ -29,12 +29,13 @@ const DATE_FORMAT1 = "MMM D, YYYY"
  *
  * @return {Promise} A promise returned by the `fetch()` call.
  */
-module.exports = function GitHubCalendar (container, username, options) {
+module.exports = function GitHubCalendar (container, cosmojinnie, options) {
+
 
     container = $(container);
 
     options = options || {};
-    options.summary_text = options.summary_text || `Summary of pull requests, issues opened, and commits made by <a href="https://github.com/${username}" target="blank">@${username}</a>`;
+    options.summary_text = options.summary_text || `Summary of pull requests, issues opened, and commits made by <a href="https://github.com/${cosmojinnie}" target="blank">@${cosmojinnie}</a>`;
 
     if (options.global_stats === false) {
         container.style.minHeight = "175px";
@@ -46,7 +47,7 @@ module.exports = function GitHubCalendar (container, username, options) {
         return "https://urlreq.appspot.com/req?method=GET&url=" + url;
     };
 
-    let fetchCalendar = () => fetch(options.proxy("https://github.com/" + username)).then(response => {
+    let fetchCalendar = () => fetch(options.proxy("https://github.com/" + cosmojinnie)).then(response => {
         return response.text()
     }).then(body => {
         let div = document.createElement("div");
@@ -117,3 +118,6 @@ module.exports = function GitHubCalendar (container, username, options) {
     return fetchCalendar();
 }
 
+GitHubCalendar(".calendar", "cosmojinnie", {
+    responsive: true
+});
