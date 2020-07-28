@@ -34,11 +34,17 @@
     <!-- ******HEADER****** --> 
     <header class="header">
         <div class="container clearfix">                       
-            <img class="profile-image img-fluid float-left rounded-circle" src="#" alt="profile image" />
+            <img class="profile-image img-fluid float-left rounded-circle" src="assets/images/profile.jpg" alt="profile image" />
             <div class="profile-content float-left">
                 <h1 class="name">이혜진</h1>
-                <h2 class="desc">Web Developer</h2>   
-                <ul class="social list-inline">
+                <h2 class="desc">Web Developer</h2>  
+                <ul class="list-unstyled">
+                    <li><i class="fa fa-phone" aria-hidden="true"></i><span class="sr-only">Tel:</span><a href="tel:+82-10-5162-1345">010-5162-1345</a></li>
+                    <li><i class="fas fa-map-marker-alt"></i><span class="sr-only">Location:</span> 제주도 서귀포시</li>
+                    <li><i class="fas fa-envelope"></i><span class="sr-only">Email:</span><a href="mailto:cosmojinnie@gmail.com">cosmojinnie@gmail.com</a></li>
+                    <li><i class="fab fa-github-alt"></i><span class="sr-only">Github:</span><a href="https://github.com/cosmojinnie" target="_blank">https://github.com/cosmojinnie</a></li>
+                </ul> 
+                <ul class="social list-inline" style="display: none;">
                     <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
                     <li class="list-inline-item"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
                     <li class="list-inline-item"><a href="https://github.com/cosmojinnie" target="_blank"><i class="fab fa-github-alt"></i></a></li>    
@@ -57,7 +63,10 @@
                     <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">About Me</h2>
                         <div class="content">
-                            <p>새로운 것에 도전하는 것을 좋아하는 프로그래머 이혜진입니다. 웹 프로그래밍에 대한 관심이 있으며 그 중 프론트엔드 영역에 대해 흥미가 있습니다.  </p>
+                            <p>  사용자와 직접적으로 소통하는 클라이언트 사이드에 매력을 느껴서 현재 프론트엔드 영역에 관심이 많습니다. <br>
+                            그래서 관련 프로젝트를 계속해서 만들어 나가려고 합니다. <br>
+                            또한 프로그래밍의 폭 넓은 이해와 더 나은 개발자가 되기 위해 현재 방송통신대학교 컴퓨터공학과 재학 중입니다. <br>
+                            현업에서 활약하며 발전하는 개발자가 되겠습니다.</p>
                         </div><!--//content-->
                     </div><!--//section-inner-->                 
                 </section><!--//section-->
@@ -128,17 +137,6 @@
                     </div><!--//section-inner-->                
                 </section><!--//section-->
                 
-                <section class="experience section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading">경력</h2>
-                        <div class="content">
-                            <div class="item">
-                                <h3 class="title">프론트엔드 - <span class="place"><a href="#">쉐어잇</a></span> <span class="year">(2019.04 - 2019.09)</span></h3>
-                                <p>중개 플랫폼 서비스를 하는 스타트업에서 재직했으며 주요 업무는 모바일 웹 화면 개발 업무였습니다.<br> 그 외 DB나 화면 기획, 화면 설계, 제품 매뉴얼 작성 등의 다양한 업무를 수행하며 개발 전반적인 업무의 역량을 키웠습니다.</p>
-                            </div><!--//item-->
-                        </div><!--//content-->  
-                    </div><!--//section-inner-->                 
-                </section><!--//section-->
                 <section class="github section" style="display: none;">
                     <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">My GitHub</h2>
@@ -155,29 +153,13 @@
                     </div><!--//secton-inner-->
                 </section><!--//section-->
             </div><!--//primary-->
+
             <div class="secondary col-lg-4 col-12">
-                 <aside class="info aside section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading sr-only">Basic Information</h2>
-                        <div class="content">
-                            <ul class="list-unstyled">
-                                <li><i class="fas fa-map-marker-alt"></i><span class="sr-only">Location:</span>제주도 서귀포시</li>
-                                <li><i class="fas fa-envelope"></i><span class="sr-only">Email:</span><a href="#">cosmojinnie@gmail.com</a></li>
-                                <li><i class="fas fa-link"></i><span class="sr-only">Website:</span><a href="https://github.com/cosmojinnie" target="_blank">https://github.com/cosmojinnie</a></li>
-                            </ul>
-                        </div><!--//content-->  
-                    </div><!--//section-inner-->                 
-                </aside><!--//aside-->
-                
                 <aside class="skills aside section">
                     <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">사용 가능한 프로그래밍 언어</h2>
                         <div class="content">
-                            <!-- <p class="intro">
-                                Intro about your skills goes here. Keep the list lean and only show your primary skillset. You can always provide a link to your Linkedin or Github profile so people can get more info there.</p> -->
-                            
                             <div class="skillset">
-                               
                                 <div class="item">
                                     <h3 class="level-title">HTML &amp; CSS<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="You can use the tooltip to explain more about your skill level..."><i class="fas fa-info-circle"></i>중급</span></h3>
                                     <div class="level-bar">
@@ -185,7 +167,6 @@
                                         </div>                                      
                                     </div><!--//level-bar-->                                 
                                 </div><!--//item-->
-                                
                                 <div class="item">
                                     <h3 class="level-title">Javascript &amp; jQuery<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="You can use the tooltip to explain more about your skill level..."><i class="fas fa-info-circle"></i>중급</span></h3>
                                     <div class="level-bar">
@@ -201,7 +182,6 @@
                                         </div>                                      
                                     </div><!--//level-bar-->                                 
                                 </div><!--//item-->
-                                
                                 <div class="item">
                                     <h3 class="level-title">ORACLE DATABASE<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="You can use the tooltip to explain more about your skill level..."><i class="fas fa-info-circle"></i>중급</span></h3>
                                     <div class="level-bar">
@@ -209,8 +189,7 @@
                                         </div>                                      
                                     </div><!--//level-bar-->                                 
                                 </div><!--//item-->
-                                
-                            </div>              
+                            </div><!--//skillset-->              
                         </div><!--//content-->  
                     </div><!--//section-inner-->                 
                 </aside><!--//section-->
@@ -226,6 +205,10 @@
                             <div class="item">                      
                                 <h3 class="title"><i class="fas fa-graduation-cap"></i> 대학교 졸업</h3>
                                 <h4 class="university">경성대학교 디지털미디어학부 <span class="year">(2009-2013)</span></h4>
+                            </div><!--//item-->
+                            <div class="item">                      
+                                <h3 class="title"><i class="fas fa-graduation-cap"></i> 대학교 재학 중</h3>
+                                <h4 class="university">방송통신대학교 컴퓨터공학과 <span class="year">(2019 ~ )</span></h4>
                             </div><!--//item-->
                         <h2 class="heading">개발 교육 이수</h2>
                         <div class="content">
@@ -243,6 +226,18 @@
                             </div><!--//item-->
                         </div><!--//content-->
                     </div><!--//section-inner-->
+                </aside><!--//section-->
+
+                <aside class="experience section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">경력</h2>
+                        <div class="content">
+                            <div class="item">
+                                <h3 class="title">프론트엔드 - <span class="place"><a href="#">쉐어잇</a></span> <span class="year">(2019.04 - 2019.09)</span></h3>
+                                <p>중개 플랫폼 서비스를 하는 스타트업에서 재직했으며 주요 업무는 모바일 웹 화면 개발 업무였습니다.<br> 그 외 DB나 화면 기획, 화면 설계, 제품 매뉴얼 작성 등의 다양한 업무를 수행하며 개발 전반적인 업무의 역량을 키웠습니다.</p>
+                            </div><!--//item-->
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                 
                 </aside><!--//section-->
                             
                 <aside class="languages aside section">
@@ -262,7 +257,6 @@
                         </div><!--//content-->
                     </div><!--//section-inner-->
                 </aside><!--//section-->
-                
             </div><!--//secondary-->    
         </div><!--//row-->
     </div><!--//masonry-->
@@ -270,8 +264,7 @@
     <!-- ******FOOTER****** --> 
     <footer class="footer">
         <div class="container text-center">
-                <!--/* This template is free as long as you keep the attribution link below. Thank you for your support. :) If you'd like to use the template without the attribution, you can buy the commercial license via our website: themes.3rdwavemedia.com */-->
-                <small class="copyright">Designed with <a href="https://github.com/cosmojinnie" target="_blank" style="font-weight: 700;">cosmojinnie</a> by <a href="https://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
+            <small class="copyright">Designed with <a href="https://github.com/cosmojinnie" target="_blank" style="font-weight: 700;">cosmojinnie</a> by <a href="https://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
         </div><!--//container-->
     </footer><!--//footer-->
  
